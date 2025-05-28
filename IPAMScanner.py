@@ -351,18 +351,12 @@ def main():
     conn = pymysql.connect(host=DB_HOST, user=DB_USER, password=DB_PASS, database=DB_NAME)
     cursor = conn.cursor()
     
-#    ip_long = ip_to_long('192.168.1.15')
     cursor.execute("""
     SELECT id, ip_addr
     FROM ipaddresses
     WHERE (hostname IS NULL OR hostname = '')
     OR (description IS NULL OR description = '')
     """)
-#    cursor.execute("""
-#        SELECT id, ip_addr
-#        FROM ipaddresses
-#        WHERE ip_addr = %s
-#    """, (ip_long,))
 
     records = cursor.fetchall()
 
@@ -408,7 +402,7 @@ def test_single_ip(ip_str):
     
 
 if __name__ == "__main__":
-#    load_oui('oui.txt')  # 先加载本地OUI
-#    test_single_ip('192.168.1.16')  # 换成你想测试的IP
+#    load_oui('oui.txt')
+#    test_single_ip('192.168.1.16')
 
      main()

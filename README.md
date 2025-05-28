@@ -15,15 +15,8 @@ Frist: download https://standards-oui.ieee.org/oui/oui.txt for offline MAC addre
 Then, install dependencies:
 
 sudo apt update
-sudo apt install -y \
-  net-tools \             # for getent and ifconfig (getent hosts)
-  samba-common-bin \      # for nmblookup
-  avahi-utils \           # for avahi-resolve
-  snmp \                  # for snmpget
-  arping \                # for arping
-  iputils-ping \          # for ping
-  iproute2 \              # for `ip neigh show`
-
+sudo apt update
+sudo apt install -y net-tools samba-common-bin avahi-utils snmp arping iputils-ping iproute2
 pip install requests pymysql
 
 ---

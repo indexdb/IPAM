@@ -13,12 +13,12 @@ IPAMScanner works on Ubuntu,
 Frist: download https://standards-oui.ieee.org/oui/oui.txt for offline MAC address Vendor matching.
 
 Then, install dependencies:
-
+```
 sudo apt update
 sudo apt update
 sudo apt install -y net-tools samba-common-bin avahi-utils snmp arping iputils-ping iproute2
 pip install requests pymysql
-
+```
 ---
 
 ![](docs/overview.png)

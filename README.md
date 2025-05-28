@@ -7,4 +7,4 @@ Currently, it operates by directly interacting with the database, though integra
 
 ---
 
-![](docs/images/overview.png)
+![](docs/overview.png)
